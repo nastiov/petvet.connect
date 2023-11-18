@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>PetVet - Ваш сервис поиска ветеринара</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Видимая пользователю область -->
+    <title>PetVet - Ваш сервис поиска ветеринара</title> <!-- Отражение заголовок  -->
     <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Подключаем внешний CSS файл -->
+    <link type="image/x-icon" href="./assets/img/svg/icon_dog.svg" rel="shortcut icon">
+    <script src="index.js"></script><!-- Подключаем внешний JS файл -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Использовать ширину экрана текущего устройства -->
 </head>
 <body>
-    <div class="header">
-        <h1>Добро пожаловать в PetVet!</h1>
-        <p>Мы помогаем вам найти лучшего ветеринара для вашего питомца.</p>
-    </div>
-    <div class="content">
-        <h2>О нас</h2>
-        <p>Мы предлагаем услуги по поиску ветеринара в вашем регионе.</p>
-        <h2>Контакты</h2>
-        <p>Свяжитесь с нами по электронной почте: info@petvet.com</p>
-    </div>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="/">
+                        <img class="header-logo-pic" src="./assets/img/logo.png" alt="PetVet Logo">
+                    </a>
+                    <p class="siteName">PetVet</p>
+                </div>
+                <div class="header-nav-button-wrapper">
+                    <nav class="header-nav">
+                        <ul class="header-list">
+                            <li class="header-item"><a href="#welcome" class="nav-link-home">Главная</a></li>
+                            <li class="header-item"><a href="#about" class="nav-link">О нас</a></li>
+                            <li class="header-item"><a href="#service" class="nav-link">Услуги</a></li>
+                            <li class="header-item"><a href="#price" class="nav-link">Цены</a></li>
+                            <li class="header-item"><a href="#contacts" class="nav-link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button id="quickSearchButton">Выбор ветеринара</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+      <main>
+        <section class="welcome" id="welcome" style="background-image: url('./assets/img/png/doc1.jpg'); background-size: cover; background-position: center;">
+            <div class="wrapper">
+                <div class="welcome-wrapper">
+                    <div class="welcome-block">
+                        <h1 class="welcome-title">Добро пожаловать в <span class="span-green">PetVet</span></h1>
+                        <p class="welcome-description">Мы помогаем вам найти лучшего ветеринара для вашего питомца.</p>
+                        <button type="submit" class="welcome-button">Подобрать ветеринара</button>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="./assets/img/png/patient1.jpg" alt="Patient Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </main>
 </body>
+
 </html>
