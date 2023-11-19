@@ -25,6 +25,11 @@ a {
 .header {
     background-color: #ffffff;
     padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 .header-wrapper {
     display: flex;
@@ -62,7 +67,7 @@ a {
     margin-right: 5px;
 }
 .nav-link-home {
-    color: #E06733;
+    color: #fab84f;
     font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 700;
@@ -106,6 +111,9 @@ a {
 /* Header Style End */
 
 /* Main Style Start */
+main {
+    padding-top: 80px; 
+}
 /* Main Style End */
 
 /* Welcome Style Start */
@@ -172,9 +180,9 @@ a {
     position: absolute;
     right: 0;
     top: 0;
-    width: 30%; /* Уменьшаем ширину изображения до 30% */
-    height: 0;
-    padding-bottom: 16.875%; /* 30% * 9 / 16 = 16.875% */
+    width: 30%;  /*Уменьшаем ширину изображения */
+    height: 30%;
+    padding-bottom: 40%;  /*50% * 9 / 16 = 28.125% */
     border: 16px solid #fff; /* Добавляем рамку вокруг изображения */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Добавляем тень вокруг изображения */
     border-radius: 10%; /* Добавляем закругленные края */
@@ -189,6 +197,339 @@ a {
 }
 /* Welcome Style End */
 
+/* About Style Start */
+.about {
+    padding: 93px 0 94px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust this value according to your site's layout */
+}
+
+.about-block {
+    width: 605px;
+    padding-top: 68px;
+}
+
+.about-title {
+    width: 463px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #444341;
+    margin-bottom: 40px;
+}
+
+.span-orange {
+    color: #fab84f;
+}
+
+.about-description {
+    width: 605px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+.about-foto {
+    width: 464px;
+    height: 479px;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* About Style End */
+
+/* Service Style Start */
+.service {
+    background: #f0f1f5; 
+    padding: 40px 0 121px 0;
+}
+.service-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+.service-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 141px;
+}
+.service-title {
+    width: 306px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #444341; 
+}
+.service-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 559px;
+}
+.button-service {
+    position: absolute; 
+    top: -5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 161px;
+    height: 50px;  
+    border: 1px solid #fab84f; 
+    border-radius: 5px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fab84f; 
+    z-index: 1; 
+}
+.button-service:hover {
+    background: #fab84f; 
+    color: #ffffff;
+    transition: .2s;
+}
+.service-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 116px;
+    row-gap: 55px;
+}
+.servise-first {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    height: 450px;
+    border-radius: 0px 0px 20px 20px;
+}
+.service-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+.service-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 30px 36px 30px;
+}
+.service-name {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;  
+    color: #fab84f; 
+    margin-bottom: 10px;
+}
+.service-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;  
+    color: #717171;
+    text-align: center;
+}
+/* Service Style End */
+
+/* Prices Style Start */
+.prices {
+    background: #f0f1f5; /* Изменено с #EDF2EC на #f0f1f5 */
+    padding: 40px 0 109px 0;
+}
+.prices-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.prices-title {
+    width: 135px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #444341; /* Изменено с #000000 на #444341 */
+    padding-bottom: 60px;
+}
+summary {
+    display: block;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+.accourdion-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 33px;
+    padding: 34px 41px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+.accourdion {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 16px 40px 12px;
+    background: #f0f1f5; /* Изменено с #EDF2EC на #f0f1f5 */
+    border-radius: 20px;
+    cursor: pointer;
+}
+.accourdion:hover {
+    background-color: #e9e4e4;
+    transition: all 0.25s ease-in-out;
+    transition: .2s;
+}
+.accourdion-title {
+    position: relative;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444341; /* Изменено с #000000 на #444341 */
+}
+.accourdion-title::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #D9D9D9;
+    background-image: url("./assets/img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+}
+.accourdion-body {
+    padding-top: 18px;
+}
+.accourdion-descr {
+    margin-bottom: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    position: relative;
+}
+.accourdion-descr::before {
+    content: '';
+    width: 95%;
+    height: 0.5px;
+    position: absolute;
+    top: -6p
+}
+.accourdion-price {
+    margin-bottom: 12px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #444341; /* Изменено с #000000 на #444341 */
+}
+.accourdion-price--marked {
+    color: #fab84f; /* Изменено с #E06733 на #fab84f */
+    text-transform: uppercase;
+}
+.accourdion-btn {
+    min-width: 86px;
+    padding: 3px 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    border: none;
+    cursor: pointer;
+}
+.accourdion-btn:hover {
+    color: white;
+    background-color: #fab84f; /* Изменено с #E06733 на #fab84f */
+    transition: all 0.2s ease-in-out;
+    transition: .2s;
+}
+.prices-title {
+    width: 454px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #444341; /* Изменено с #000000 на #444341 */
+    padding-bottom: 38px;
+}
+.prices-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.prices-text-buttom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 39px;
+}
+.button-prices {
+    min-width: 162px;
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 12px 0 12px 0;
+    background-color: #ffffff;
+    border: 1px solid #fab84f; /* Изменено с #E06733 на #fab84f */
+    border-radius: 5px;
+    text-align: center;
+    color: #fab84f; /* Изменено с #E06733 на #fab84f */
+}
+.button-prices:hover {
+    background: #fab84f; /* Изменено с #E06733 на #fab84f */
+    color: #FFFFFF;
+    transition: .2s;
+}
+.prices-foto {
+    width: 148px;
+    height: 180px;
+}
+.prices-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Prices Style End */
 
 /* Медиа-запросы для оптимизации на мобильных устройствах */
 @media (max-width: 768px) {
@@ -215,5 +556,28 @@ a {
     .welcome-button {
         width: 100%; /* Кнопка занимает всю ширину на маленьких экранах */
         margin-top: 20px; /* Добавляем отступ сверху на маленьких экранах */
+    }
+    .about {
+        padding: 50px 0;
+    }
+    .about-wrapper {
+        flex-direction: column;
+    }
+    .about-block, .about-description {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .about-title {
+        width: 100%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .about-description {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .about-foto {
+        width: 100%;
+        height: auto;
     }
 }

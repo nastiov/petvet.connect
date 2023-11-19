@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Видимая пользователю область -->
     <title>PetVet - Ваш сервис поиска ветеринара</title> <!-- Отражение заголовок  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Подключаем внешний CSS файл -->
     <link type="image/x-icon" href="./assets/img/svg/icon_dog.svg" rel="shortcut icon">
     <script src="index.js"></script><!-- Подключаем внешний JS файл -->
@@ -50,6 +51,113 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="about-wrapper">
+                    <div class="about-block">
+                        <h2 class="about-title">Мы - <span class="span-orange">опытные профессионалы</span> в области ветеринарии</h2>
+                        <p class="about-description">PetVet - это команда опытных ветеринаров, которые посвятили свою жизнь заботе о здоровье ваших питомцев. Мы стремимся предоставить вам самые актуальные и эффективные методы лечения и ухода за вашими питомцами.</p>
+                    </div>
+                    <div class="about-foto">
+                        <img class="about-img" src="./assets/img/png/doc2.jpg" alt="Ветеринар">
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <section class="service" id="service">
+            <div class="wrapper">
+                <div class="service-wrapper">
+                    <div class="service-block">
+                        <h2 class="service-title">Наши ветеринары</h2>
+                        <div class="service-buttons">
+                            <button type="button" class="button-service">Ветеринар 1</button>
+                            <button type="button" class="button-service">Ветеринар 2</button>
+                            <button type="button" class="button-service">Ветеринар 3</button>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="servise-first">
+                            <button type="button" class="button-service">Ветеринар 1</button>
+                            <img class="service-img" src="./assets/img/png/vet1.jpg" alt="Ветеринар 1">
+                            <div class="service-item-content">
+                                <p class="service-name">Ветеринар 1</p>
+                                <p class="service-info">Опытный ветеринар с большим количеством успешных случаев</p>
+                            </div>
+                        </div>
+                        <div class="servise-first">
+                            <button type="button" class="button-service">Ветеринар 2</button>
+                            <img class="service-img" src="./assets/img/png/vet2.jpg" alt="Ветеринар 2">
+                            <div class="service-item-content">
+                                <p class="service-name">Ветеринар 2</p>
+                                <p class="service-info">Специалист по домашним животным с отличными отзывами</p>
+                            </div>
+                        </div>
+                        <div class="servise-first">
+                            <button type="button" class="button-service">Ветеринар 3</button>
+                            <img class="service-img" src="./assets/img/png/vet3.jpg" alt="Ветеринар 3">
+                            <div class="service-item-content">
+                                <p class="service-name">Ветеринар 3</p>
+                                <p class="service-info">Ветеринар с большим опытом работы с экзотическими животными</p>
+                            </div>
+                        </div>
+                        <!-- Добавьте больше ветеринаров по аналогии -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices" id="price">
+            <div class="wrapper">
+                <div class="prices-wrapper">
+                    <div class="prices-prices">
+                        <h2 class="prices-title">Цены в ветеринарных клиниках</h2>
+                        <div class="accourdion-block">
+                            <details class="accourdion">
+                                <summary class="accourdion-title">Ветеринар 1</summary>
+                                <div class="accourdion-body">
+                                    <p class="accourdion-descr">Опытный ветеринар с большим количеством успешных случаев</p>
+                                    <p class="accourdion-price">
+                                        <span class="accourdion-price accourdion-price--marked">25 BYN</span> / в час
+                                    </p>
+                                    <button class="accourdion-btn">Заказать</button>
+                                </div>
+                            </details>
+                            <details class="accourdion">
+                                <summary class="accourdion-title">Ветеринар 2</summary>
+                                <div class="accourdion-body">
+                                    <p class="accourdion-descr">Специалист по домашним животным с отличными отзывами</p>
+                                    <p class="accourdion-price">
+                                        <span class="accourdion-price accourdion-price--marked">35 BYN</span> / в час
+                                    </p>
+                                    <button class="accourdion-btn">Заказать</button>
+                                </div>
+                            </details>
+                            <details class="accourdion">
+                                <summary class="accourdion-title">Ветеринар 3</summary>
+                                <div class="accourdion-body">
+                                    <p class="accourdion-descr">Ветеринар с большим опытом работы с экзотическими животными</p>
+                                    <p class="accourdion-price">
+                                        <span class="accourdion-price accourdion-price--marked">15 BYN</span> / в час
+                                    </p>
+                                    <button class="accourdion-btn">Заказать</button>
+                                </div>
+                            </details>
+                        </div>
+                    </div>         
+                    <div class="prices-block">
+                        <div class="prices-text-buttom">
+                                <p class="prices-title">Наши лучшие <span class="span-green">ветеринары</span> готовы помочь вам</p>
+                                <button type="submit" class="button-prices">Связаться с нами</button>
+                            </div>
+                            <div class="prices-foto">
+                            <img class="prices-img" src="./assets/img/png/step.png" alt="leafs_pictures">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
         </section>
 
       </main>
